@@ -1,0 +1,531 @@
+*{padding: 0; margin: 0; list-style: none;}
+a{text-decoration: none;}
+body{
+    background: #E9EAED;
+}
+/*----------------顶部---------------*/
+.header{
+    width: 100%;
+    height: 61px;
+    background: #1b2326;
+}
+.header::before {
+    background: #000 linear-gradient(to left, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
+    content: "";
+    height: 5px;
+    position: absolute;
+    width: 100%;
+}
+.header .header-warp{
+    width: 1200px;
+    height: 61px;
+    margin: 0 auto;
+}
+.header-warp .logo{
+    float: left;
+    margin-right: 100px;
+}
+.header-warp .logo img:hover{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+.header-warp .logo img{
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 5px;
+    margin-right: 10px;
+    transition: 1s;
+}
+.header-warp .logo p{
+    float: left;
+    font-size: 22px;
+    color: #fff;
+    line-height: 61px;
+}
+.header-warp .nav{
+    float: left;
+    width: 400px;
+    height: 61px;
+}
+.header-warp .nav ul li{
+    float: left;
+    width: 80px;
+    line-height: 61px;
+    text-align: center;
+}
+.header-warp .nav ul li:hover{
+    background: #fff;
+    transition: 1s;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.header-warp .nav ul li:hover a{
+    color: #000;
+}
+.header-warp .nav ul li a{
+    color: #fff;
+    font-size: 14px;
+}
+.header-warp .sousuokuang{
+    margin-top: 17px;
+    float: right;
+}
+.header-warp .sousuokuang form{
+    float: left;
+    display: none;
+}
+.header-warp .sousuokuang:hover form{
+    display: block;
+}
+.header-warp .sousuokuang form .sousuo{
+    float: left;
+    width: 250px;
+    height: 25px;
+    outline: none;
+
+}
+.header-warp .sousuokuang form .ss{
+    width: 60px;
+    height: 29px;
+    outline: none;
+}
+/*----------------顶部结束---------------*/
+/*----------------banner---------------*/
+.banner{
+    width: 1200px;
+    height: 257px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+#container {
+    position: relative;
+    width: 600px;
+    height: 257px;
+    overflow: hidden;
+}
+
+#list {
+    position: absolute;
+    z-index: 1;
+}
+
+#list img {
+    float: left;
+    width: 600px;
+    height: 400px;
+}
+
+#buttons {
+    position: absolute;
+    left: 285px;
+    bottom: 20px;
+    z-index: 2;
+    height: 10px;
+    width: 100px;
+}
+
+#buttons span {
+    float: left;
+    margin-right: 5px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    background: #333;
+    cursor: pointer;
+}
+
+#buttons .on {
+    background: orangered;
+}
+
+.arrow {
+    position: absolute;
+    top: 115px;
+    z-index: 2;
+    display: none;
+    width: 40px;
+    height: 40px;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 39px;
+    text-align: center;
+    color: #fff;
+    background-color: RGBA(0, 0, 0, .3);
+    cursor: pointer;
+}
+
+.arrow:hover {
+    background-color: RGBA(0, 0, 0, .7);
+}
+
+#container:hover .arrow {
+    display: block;
+}
+
+#prev {
+    left: 20px;
+}
+
+#next {
+    right: 20px;
+}
+.banner .tp{
+    width: 268px;
+    height: 257px;
+}
+.banner .tp1{
+    width: 268px;
+    height: 124px;
+    overflow: hidden;
+    margin-bottom: 5px;
+}
+.banner .tp img{
+    width: 268px;
+    height: 124px;
+    transition: 1s;
+}
+.banner .tp1 img:hover{
+    transform: scale(1.5,1.5);
+}
+.banner .tp2{
+    width: 268px;
+    height: 124px;
+    overflow: hidden;
+}
+.banner .tp2 img:hover{
+    transform: scale(1.5,1.5);
+}
+.banner .grxx{
+    width: 283px;
+    height: 257px;
+    background: #2a2a2a;
+}
+.banner .grxx h2{
+    font-size: 22px;
+    margin: 10px;
+    color: #89919a;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+.banner .grxx p{
+    font-size: 12px;
+    color: #d0d2d4;
+    padding: 0 0 0 25px;
+    line-height: 28px;
+}
+.banner .grxx ul{
+    margin: 15px;
+}
+.banner .grxx .qq{
+    margin-left: 75px;
+    margin-right: 15px;
+    width: 55px;
+    height: 55px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 218, 218, 0.2);
+    float: left;
+}
+.banner .grxx .wx{
+    width: 55px;
+    height: 55px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(255, 218, 218, 0.2);
+    float: left;
+}
+.banner .grxx img{
+    transition: all 1.2s ease-out 0s;
+    margin-top: 6px;
+    margin-left: 7px;
+    width: 40px;
+    height: 40px;
+}
+.banner .grxx img:hover{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+/*----------------banner结束---------------*/
+/*----------------内容区1---------------*/
+.main1{
+    width: 1200px;
+    height: 309px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main1 .main1-r{
+    width: 892px;
+    height: 309px;
+    background: #fff;
+}
+.main1 .main1-r .nav{
+    margin: 20px auto 10px;
+    width: 860px;
+    height: 41px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.main1 .main1-r .nav ul li{
+    float: left;
+    width: 62px;
+    line-height: 41px;
+    text-align: center;
+}
+.main1 .main1-r .nav ul .s li{
+    border-bottom: 2px solid #000;
+}
+.main1 .main1-r .nav ul li a{
+    color: #000;
+}
+.main1 .main1-r .tp{
+    float: left;
+    width: 288px;
+    height: 102.63px;
+    margin-left: 16px;
+    overflow: hidden;
+}
+.main1 .main1-r .tp img{
+    width: 288px;
+    height: 102.63px;
+    transition: 1s;
+}
+.main1 .main1-r .tp img:hover{
+    transform: scale(1.5,1.5);
+    opacity: .7;
+}
+.main1 .jsc{
+    margin-left: 17px;
+    float: left;
+    width: 556px;
+    height: 218px;
+}
+.main1 .jsc .jsc-bj:hover{
+    overflow: hidden;
+    width: 567px;
+    height: 90px;
+    background: #f7f7f7;
+}
+.main1 .jsc .jsc-bj:hover .i{
+    margin-top: 5px;
+    background: #262626;
+}
+.main1 .jsc .jsc-bj .i{
+    float: left;
+    margin-left: 20px;
+    text-align: center;
+    width: 20px;
+    height: 20px;
+    background: #949494;
+}
+.main1 .jsc .jsc-bj .i p{
+    color: #fff;
+}
+.main1 .jsc .jsc-bj .tj{
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+.main1 .jsc .jsc-bj .tj a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    margin-left: 27PX;
+}
+.main1 .jsc .jsc-bj .tj:hover a{
+    font-weight: bold;
+}
+.main1 .jsc .jsc-bj .tj:hover p{
+    display: block;
+    height: 58px;
+}
+.main1 .jsc .jsc-bj .tj p{
+    display: none;
+    font-size: 14px;
+    margin-left: 19px;
+    line-height: 35px;
+}
+.main1 .main1-m{
+    width: 283px;
+    height: 309px;
+    background: #fff;
+}
+.main1-m{
+    float: left;
+    width: 283px;
+    height: 309px;
+    background: #fff;
+}
+.main1-m .zjgx{
+    margin: 20px auto;
+    width: 242px;
+    height: 41px;
+    border-bottom: 1px solid #e2e2e2;
+    line-height: 40px;
+}
+.main1-m .zjgx h2{
+    color: #484848;
+    font-size: 16px;
+    font-weight: normal;
+}
+.main1-m .k {
+    text-align: center;
+    line-height: 51px;
+} 
+.main1-m .k p{
+    font-size: 15px;
+}
+.main1-m .k P:hover{
+    color: #04c7b6;
+}
+/*----------------内容区1结束---------------*/
+/*----------------内容区2---------------*/
+.main2{
+    width: 1200px;
+    height: 309px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.main2 .main2-r{
+    width: 892px;
+    height: 309px;
+    background: #fff;
+}
+.main2 .main2-m{
+    width: 283px;
+    height: 309px;
+    background: #fff;
+}
+.main2 .main2-r .nav{
+    margin: 20px auto 10px;
+    width: 860px;
+    height: 41px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.main2 .main2-r .nav ul li{
+    float: left;
+    width: 84px;
+    line-height: 41px;
+    text-align: center;
+}
+.main2 .main2-r .nav ul .s li{
+    border-bottom: 2px solid #000;
+}
+.main2 .main2-r .nav ul li a{
+    color: #000;
+}
+.main2 .main2-r .tp{
+    width: 860px;
+    height: 227px;
+    margin-left: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+.main2 .main2-r .tp .tp1{
+    width: 280px;
+    height: 227px;
+    overflow: hidden;
+}
+.main2 .main2-r .tp .tp1 img:hover{
+    transform: scale(1.5,1.5);
+}
+.main2 .main2-r .tp .tp2{
+    width: 280px;
+    height: 227px;
+    overflow: hidden;
+}
+.main2 .main2-r .tp .tp2 img:hover{
+    transform: scale(1.5,1.5);
+}
+.main2 .main2-r .tp .tp3{
+    width: 280px;
+    height: 227px;
+    overflow: hidden;
+}
+.main2 .main2-r .tp .tp3 img:hover{
+    transform: scale(1.5,1.5);
+}
+.main2 .main2-r .tp img{
+    width: 280px;
+    height: 227px;
+    transition: 1s;
+}
+.main2-m{
+    float: left;
+    width: 283px;
+    height: 309px;
+    background: #fff;
+}
+.main2-m .grxq{
+    margin: 20px auto;
+    width: 242px;
+    height: 41px;
+    border-bottom: 1px solid #e2e2e2;
+    line-height: 40px;
+}
+.main2-m .grxq h2{
+    color: #484848;
+    font-size: 16px;
+    font-weight: normal;
+}
+.main2-m .grxq p{
+    color: #484848;
+}
+.yx{
+    height: 50px;
+    margin-bottom: 20px;
+}
+.yx dt img{
+    margin-right: 10px;
+    float: left;
+    width: 50px;
+    height: 50px;
+    transition: all 1.2s ease-out 0s;
+}
+.yx dt img:hover{
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    -ms-transform:rotate(360deg);
+    transform:rotate(360deg);
+}
+.yx dd{
+    font-size: 11px;
+    color: #000;
+    line-height: 24px;
+}
+.yx dd a{
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+}
+/*----------------内容区2结束---------------*/
+/*----------------内容区3---------------*/
+.main3{
+    text-align: center;
+    width: 1202px;
+    height: 95px;
+    margin: 0 auto;
+    border: 1px solid #b9b9b9;
+}
+.main3 a{
+    text-decoration: underline;
+    color: #000;
+    line-height: 95px;
+    margin-left: 20px;
+}
+.main3 a:hover{
+    font-size: 25px;
+    transition: 1s;
+    color: red;
+}
+/*----------------内容区3结束---------------*/
